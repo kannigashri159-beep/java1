@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+        // Read three integers
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int secondSmallest;
+
+        // Check which is the second smallest
+        if ((a > b && a < c) || (a > c && a < b)) {
+            secondSmallest = a;
+        } else if ((b > a && b < c) || (b > c && b < a)) {
+            secondSmallest = b;
+        } else {
+            secondSmallest = c;
+        }
+
+        System.out.println(secondSmallest);
+  }
+}
